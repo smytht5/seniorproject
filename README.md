@@ -1,4 +1,0 @@
-# seniorproject
-test
-testing
-testable
