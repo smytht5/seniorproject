@@ -13,5 +13,4 @@
     <string name="terms_of_service">By clicking Register you agree to the Terms of Service and Privacy Policy</string>
     <string name="title_activity_maps">Map</string>
     <string name="location_access">Allow "Open Circle" to access your location while you use this app?</string>
-    <string name="profile_image">Viewable image of user profile picture</string>
 </resources>

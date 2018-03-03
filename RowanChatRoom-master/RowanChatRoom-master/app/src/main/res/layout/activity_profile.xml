@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Example Username"
+                android:text="@string/username_textfield"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Major:"
+                android:text="@string/major_word"
                 android:textStyle="bold" />
 
             <TextView
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Example Major"
+                android:text="@string/major_textfield"
                 android:textAlignment="center" />
 
         </LinearLayout>
@@ -78,7 +78,7 @@
                 android:layout_width="117dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Email:"
+                android:text="@string/email_word"
                 android:textAlignment="viewStart"
                 android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="example@students.rowan.edu"
+                android:text="@string/email_textfield"
                 android:textAlignment="center" />
         </LinearLayout>
 
@@ -102,7 +102,7 @@
                 android:layout_width="11dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Year:"
+                android:text="@string/year_word"
                 android:textStyle="bold" />
 
             <TextView
@@ -110,7 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Senior"
+                android:text="@string/year_textfield"
                 android:textAlignment="center" />
         </LinearLayout>
 
@@ -125,7 +125,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bio:"
+            android:text="@string/bio_word"
             android:textAlignment="center"
             android:textStyle="bold" />
 
@@ -133,34 +133,33 @@
             android:id="@+id/bio_TextField"
             android:layout_width="match_parent"
             android:layout_height="103dp"
-            android:text="Description Field"
+            android:text="@string/bio_textfield"
             android:textAlignment="textStart" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="71dp"
-            android:orientation="horizontal"></LinearLayout>
 
         <LinearLayout
             android:id="@+id/friending_Layout"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="124dp"
             android:gravity="bottom|center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:style="?android:attr/buttonBarStyle">
+
 
             <Button
                 android:id="@+id/contact_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Contact Me" />
+                android:style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/contactme_button" />
 
             <Button
                 android:id="@+id/add_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Friend Me"
+                android:style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/addme_button"
                 android:textAlignment="center" />
         </LinearLayout>
     </LinearLayout>
