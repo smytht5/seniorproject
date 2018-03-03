@@ -6,60 +6,41 @@
     android:padding="16dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_vertical|center_horizontal">
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/imgbutn_editimage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/imgbutn_editimage"
+                android:contentDescription="@string/editprofile_imageDescription"
                 android:src="@android:drawable/ic_menu_add" />
+
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:clickable="true">
-
-            <LinearLayout
-                android:id="@+id/linearlayout_username"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical">
-
-
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/ep_editText_username"
-                    android:text="Username"
-                    android:imeOptions="actionDone"
-                    android:textColor="@android:color/darker_gray" />
-            </LinearLayout>
+            android:clickable="true"
+            android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editText_Description"
+                android:id="@+id/ep_editText_username"
                 android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:text="@string/editprofile_username"
+                android:textColor="@android:color/darker_gray" />
 
         </LinearLayout>
 
@@ -79,6 +60,13 @@
             android:layout_gravity="center_horizontal"
             android:name="com.onekliclabs.hatch.rowanchatroom.BlankFragment"
             tools:layout="@layout/fragment_blank" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editprofile_previewButton"
+            android:textSize="20sp" />
 
     </LinearLayout>
 </LinearLayout>
