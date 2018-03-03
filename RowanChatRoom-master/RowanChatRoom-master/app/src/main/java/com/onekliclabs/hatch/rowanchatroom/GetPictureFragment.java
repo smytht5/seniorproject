@@ -107,4 +107,6 @@ public class GetPictureFragment extends Fragment
         void onFragmentInteraction(int position);
     }
 
+
+
 }

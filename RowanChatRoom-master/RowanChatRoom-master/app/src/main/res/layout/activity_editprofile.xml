@@ -25,6 +25,17 @@
                 android:contentDescription="@string/editprofile_imageDescription"
                 android:src="@android:drawable/ic_menu_add" />
 
+            <EditText
+                android:id="@+id/ep_editText_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/editprofile_username_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:text="@string/editprofile_username"
+                android:textColor="@android:color/darker_gray" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -35,12 +46,24 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/ep_editText_username"
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="@string/editprofile_biodescription"
+                android:textAlignment="viewStart"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/editprofile_previewButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:imeOptions="actionDone"
-                android:text="@string/editprofile_username"
-                android:textColor="@android:color/darker_gray" />
+                android:onClick="previewProfile"
+                android:text="@string/editprofile_previewButton"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -60,13 +83,6 @@
             android:layout_gravity="center_horizontal"
             android:name="com.onekliclabs.hatch.rowanchatroom.BlankFragment"
             tools:layout="@layout/fragment_blank" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/editprofile_previewButton"
-            android:textSize="20sp" />
 
     </LinearLayout>
 </LinearLayout>

@@ -17,5 +17,6 @@ import java.io.IOException;
  */
 public class ProfileActivity extends Activity
 {
+
 }
 

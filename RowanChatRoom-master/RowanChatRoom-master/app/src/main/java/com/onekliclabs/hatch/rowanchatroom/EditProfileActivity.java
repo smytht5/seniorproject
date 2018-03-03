@@ -6,14 +6,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.app.FragmentManager;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -24,6 +27,8 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import android.widget.Button;
+
 
 /**
  * Created by Owner on 7/17/15.
@@ -97,7 +102,7 @@ public class EditProfileActivity extends Activity implements GetPictureFragment.
 
 
         //when image button is clicked inflate GetPictureFragment
-        imageButton.setOnClickListener(new View.OnClickListener()
+        imageButton.setOnClickListener(new OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -295,8 +300,7 @@ public class EditProfileActivity extends Activity implements GetPictureFragment.
 
                 break;
         }
-
-
     }
+
 
 }
