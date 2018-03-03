@@ -23,11 +23,12 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="@string/editprofile_imageDescription"
+                android:cropToPadding="true"
                 android:src="@android:drawable/ic_menu_add" />
 
             <EditText
                 android:id="@+id/ep_editText_username"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/editprofile_username_hint"
@@ -43,15 +44,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
-            android:orientation="vertical">
+            android:orientation="vertical" android:focusable="true">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editProfile_EditBioText"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:selectAllOnFocus="false"
                 android:singleLine="false"
                 android:text="@string/editprofile_biodescription"
                 android:textAlignment="viewStart"
@@ -61,7 +61,6 @@
                 android:id="@+id/editprofile_previewButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="previewProfile"
                 android:text="@string/editprofile_previewButton"
                 android:textSize="20sp" />
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="editprofile_username">Temp Username</string>
+    <string name="editprofile_previewButton">Preview</string>
+    <string name="editprofile_imageDescription">Edit current user image for display</string>
+    <string name="editprofile_biodescription">Tempory paragraph for user description</string>
+    <string name="editprofile_username_hint">Enter a username which will be displayed to others</string>
+</resources>
